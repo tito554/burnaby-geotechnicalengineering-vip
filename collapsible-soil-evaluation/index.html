@@ -26,6 +26,11 @@
 
 @media (max-width: 900px) {
     .sidebar { display: none; }
+    .content-area { flex-direction: column; }
+    .container { padding: 1rem; }
+    .header-top { flex-direction: column; text-align: center; }
+    main { padding: 1.5rem; }
+}
 .sidebar .cat {
     cursor: pointer; display: flex; justify-content: space-between; align-items: center;
     padding: .65rem 1rem; color: rgba(255,255,255,0.85); font-size: .85rem; font-weight: 500;
@@ -43,11 +48,11 @@ body { font-family: var(--font-b); color: var(--text); background: var(--bg); li
 .cta .contacto-line { font-size: 1rem; margin: .5rem 0; }
 
 .cta { background: var(--dark); color: white; padding: 2rem; border-radius: 10px; margin: 2rem 0; text-align: center; }
-    .container { padding: 1rem; }
+    
 .sidebar .sub a:hover { color: #c9a961; background: rgba(201,169,97,0.06); border-left-color: #c9a961; }
 * { margin:0; padding:0; box-sizing:border-box; }
 .cta .whatsapp-btn:hover { background: #1eb853; }
-    main { padding: 1.5rem; }
+    
 .cta .whatsapp-sub { font-size: .85rem; opacity: .85; margin-bottom: 1rem; }
 footer a { color: rgba(255,255,255,0.85); }
 
@@ -68,7 +73,7 @@ tr:nth-child(even) { background: #f8fafc; }
     --font-b: 'IBM Plex Sans', 'Segoe UI', sans-serif;
 }
 .servicio p { margin: 0; font-size: .9rem; color: #475569; }
-    .header-top { flex-direction: column; text-align: center; }
+    
 main p { margin-bottom: 1rem; color: #334155; }
 h1, h2, h3, h4 { font-family: var(--font-h); }
 
@@ -85,7 +90,7 @@ summary:hover { background: rgba(0,0,0,0.02); }
 .cat-row{display:flex;align-items:stretch;justify-content:space-between;background:transparent;transition:background .15s;border-bottom:1px solid rgba(255,255,255,.05)}
 /* FIX 2026-04-18: selectores sin 'nav' para coincidir con el HTML real generado */
 .sidebar { padding: .5rem 0; }
-    .content-area { flex-direction: column; }
+    
 main h3 { color: var(--dark); font-size: 1.05rem; margin: 1.5rem 0 .5rem; font-weight: 600; }
 .sidebar {
     width: 240px; background: var(--dark); color: white; flex-shrink: 0;
@@ -136,7 +141,9 @@ main h2 { color: var(--dark); font-size: 1.35rem; margin: 2rem 0 1rem; padding-b
 
 .content-area { display: flex; gap: 1.5rem; align-items: flex-start; }
 .cat-name{flex:1;padding:.85rem 1.1rem;color:inherit;text-decoration:none;font-weight:600;line-height:1.3;display:block}
-.cat-toggle[aria-expanded="true"] .cat-arrow{transform:rotate(180deg)}</style>
+.cat-toggle[aria-expanded="true"] .cat-arrow{transform:rotate(180deg)}
+
+</style>
 <style>
 @media(min-width:901px){
   .content-area{display:flex!important;gap:1.5rem!important;align-items:flex-start!important}
@@ -148,7 +155,9 @@ main h2 { color: var(--dark); font-size: 1.35rem; margin: 2rem 0 1rem; padding-b
   .navbar .nav{display:flex!important;flex-wrap:nowrap!important;gap:1.2rem!important;align-items:center!important;overflow:visible!important;justify-content:space-between!important}
   main{flex:1!important;min-width:0!important}
   .navbar{display:flex!important;align-items:center!important;justify-content:space-between!important}
-img{max-width:100%!important;height:auto!important}</style></head>
+img{max-width:100%!important;height:auto!important}
+}
+</style></head>
 <body>
 
 <header>
@@ -192,6 +201,8 @@ img{max-width:100%!important;height:auto!important}</style></head>
 
             <section>
                 <h2>Typical technical challenges in Burnaby</h2>
+<hr style="border:none;height:2px;background:linear-gradient(90deg,transparent,#A16207,transparent);margin:2rem 0;width:60%;margin-left:auto;margin-right:auto">
+
                 <p>NBCC 2020 Section 4.2.4 requires that foundations be designed for collapse potential when loose, dry, low-plasticity soils are present. In Burnaby, that applies to the Capilano sedimentary sequence and post-glacial terraces. Ignoring this can lead to sudden differential settlement after the first wet season. We have seen warehouse slabs drop 80 mm in one winter. A thorough collapsible soil evaluation in Burnaby must include oedometer collapse tests at natural moisture content and after inundation. The cost of retrofitting a slab far exceeds the evaluation fee.</p>
             </section>
 
@@ -216,6 +227,8 @@ img{max-width:100%!important;height:auto!important}</style></head>
 
             <section>
                 <h2>Q&A</h2>
+<hr style="border:none;height:2px;background:linear-gradient(90deg,transparent,#A16207,transparent);margin:2rem 0;width:60%;margin-left:auto;margin-right:auto">
+
                 <details><summary>How is collapsible soil different from expansive clay?</summary><p>Collapsible soil loses volume when wet — the grain structure collapses. Expansive clay gains volume when wet. In Burnaby, collapsible soils are typically dry silts or sands with low plasticity. Expansive clays are found in the marine deposits of the Fraser delta. Both require separate testing protocols.</p></details><details><summary>What is the typical cost range for a collapsible soil evaluation in Burnaby?</summary><p>For a standard residential or light commercial site, expect between CA$1,280 and CA$3,540. This includes two oedometer collapse tests, field density readings, SPT in one borehole, and a brief report. Costs increase if deep boreholes or multiple test pits are required.</p></details><details><summary>Can I build on collapsible soil without deep foundations?</summary><p>Yes, if the collapse potential is low (CP < 1 %) and you pre-wet the ground to trigger collapse before construction. For CP above 2 %, we recommend a stiffened raft slab or deep piles bearing on competent till. A geotechnical engineer must approve the solution based on test results.</p></details>
             </section>
 

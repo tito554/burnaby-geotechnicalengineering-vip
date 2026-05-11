@@ -24,6 +24,11 @@
 
 @media (max-width: 900px) {
     .sidebar { display: none; }
+    .content-area { flex-direction: column; }
+    .container { padding: 1rem; }
+    .header-top { flex-direction: column; text-align: center; }
+    main { padding: 1.5rem; }
+}
 .sidebar .cat {
     cursor: pointer; display: flex; justify-content: space-between; align-items: center;
     padding: .65rem 1rem; color: rgba(255,255,255,0.85); font-size: .85rem; font-weight: 500;
@@ -41,11 +46,11 @@ body { font-family: var(--font-b); color: var(--text); background: var(--bg); li
 .cta .contacto-line { font-size: 1rem; margin: .5rem 0; }
 
 .cta { background: var(--dark); color: white; padding: 2rem; border-radius: 10px; margin: 2rem 0; text-align: center; }
-    .container { padding: 1rem; }
+    
 .sidebar .sub a:hover { color: #c9a961; background: rgba(201,169,97,0.06); border-left-color: #c9a961; }
 * { margin:0; padding:0; box-sizing:border-box; }
 .cta .whatsapp-btn:hover { background: #1eb853; }
-    main { padding: 1.5rem; }
+    
 .cta .whatsapp-sub { font-size: .85rem; opacity: .85; margin-bottom: 1rem; }
 footer a { color: rgba(255,255,255,0.85); }
 
@@ -66,7 +71,7 @@ tr:nth-child(even) { background: #f8fafc; }
     --font-b: 'IBM Plex Sans', 'Segoe UI', sans-serif;
 }
 .servicio p { margin: 0; font-size: .9rem; color: #475569; }
-    .header-top { flex-direction: column; text-align: center; }
+    
 main p { margin-bottom: 1rem; color: #334155; }
 h1, h2, h3, h4 { font-family: var(--font-h); }
 
@@ -83,7 +88,7 @@ summary:hover { background: rgba(0,0,0,0.02); }
 .cat-row{display:flex;align-items:stretch;justify-content:space-between;background:transparent;transition:background .15s;border-bottom:1px solid rgba(255,255,255,.05)}
 /* FIX 2026-04-18: selectores sin 'nav' para coincidir con el HTML real generado */
 .sidebar { padding: .5rem 0; }
-    .content-area { flex-direction: column; }
+    
 main h3 { color: var(--dark); font-size: 1.05rem; margin: 1.5rem 0 .5rem; font-weight: 600; }
 .sidebar {
     width: 240px; background: var(--dark); color: white; flex-shrink: 0;
@@ -134,7 +139,9 @@ main h2 { color: var(--dark); font-size: 1.35rem; margin: 2rem 0 1rem; padding-b
 
 .content-area { display: flex; gap: 1.5rem; align-items: flex-start; }
 .cat-name{flex:1;padding:.85rem 1.1rem;color:inherit;text-decoration:none;font-weight:600;line-height:1.3;display:block}
-.cat-toggle[aria-expanded="true"] .cat-arrow{transform:rotate(180deg)}</style>
+.cat-toggle[aria-expanded="true"] .cat-arrow{transform:rotate(180deg)}
+
+</style>
 <style>
 @media(min-width:901px){
   .content-area{display:flex!important;gap:1.5rem!important;align-items:flex-start!important}
@@ -146,7 +153,9 @@ main h2 { color: var(--dark); font-size: 1.35rem; margin: 2rem 0 1rem; padding-b
   .navbar .nav{display:flex!important;flex-wrap:nowrap!important;gap:1.2rem!important;align-items:center!important;overflow:visible!important;justify-content:space-between!important}
   main{flex:1!important;min-width:0!important}
   .navbar{display:flex!important;align-items:center!important;justify-content:space-between!important}
-img{max-width:100%!important;height:auto!important}</style><script type="application/ld+json">{"@context":"https://schema.org","@graph":[{"@type":"WebPage","isPartOf":{"@id":"https://burnaby.geotechnicalengineering.vip/#website-6631","url":"https://burnaby.geotechnicalengineering.vip","@type":"WebSite"},"@id":"https://burnaby.geotechnicalengineering.vip/foundations/","description":"Foundations in Burnaby must contend with the city’s complex glacial geology, where till, marine clays, and organic soils create variable bearing conditions","name":"Foundations in Burnaby – Canada","url":"https://burnaby.geotechnicalengineering.vip/foundations/","inLanguage":"en"},{"@type":"BreadcrumbList","itemListElement":[{"position":1,"item":"https://burnaby.geotechnicalengineering.vip/","@type":"ListItem","name":"Home"},{"position":2,"item":"https://burnaby.geotechnicalengineering.vip/foundations/","@type":"ListItem","name":"Foundations"}]},{"@type":"ItemList","itemListElement":[{"position":1,"url":"https://burnaby.geotechnicalengineering.vip/collapsible-soil-evaluation/","@type":"ListItem","name":"Collapsible soil evaluation"},{"position":2,"url":"https://burnaby.geotechnicalengineering.vip/differential-settlement-analysis/","@type":"ListItem","name":"Differential settlement analysis"},{"position":3,"url":"https://burnaby.geotechnicalengineering.vip/expansive-soil-evaluation/","@type":"ListItem","name":"Expansive soil evaluation"},{"position":4,"url":"https://burnaby.geotechnicalengineering.vip/micropile-design/","@type":"ListItem","name":"Micropile design"},{"position":5,"url":"https://burnaby.geotechnicalengineering.vip/shallow-foundation-design/","@type":"ListItem","name":"Shallow foundation design"}],"name":"Foundations"}]}</script></head>
+img{max-width:100%!important;height:auto!important}
+}
+</style><script type="application/ld+json">{"@context":"https://schema.org","@graph":[{"@type":"WebPage","isPartOf":{"@id":"https://burnaby.geotechnicalengineering.vip/#website-6631","url":"https://burnaby.geotechnicalengineering.vip","@type":"WebSite"},"@id":"https://burnaby.geotechnicalengineering.vip/foundations/","description":"Foundations in Burnaby must contend with the city’s complex glacial geology, where till, marine clays, and organic soils create variable bearing conditions","name":"Foundations in Burnaby – Canada","url":"https://burnaby.geotechnicalengineering.vip/foundations/","inLanguage":"en"},{"@type":"BreadcrumbList","itemListElement":[{"position":1,"item":"https://burnaby.geotechnicalengineering.vip/","@type":"ListItem","name":"Home"},{"position":2,"item":"https://burnaby.geotechnicalengineering.vip/foundations/","@type":"ListItem","name":"Foundations"}]},{"@type":"ItemList","itemListElement":[{"position":1,"url":"https://burnaby.geotechnicalengineering.vip/collapsible-soil-evaluation/","@type":"ListItem","name":"Collapsible soil evaluation"},{"position":2,"url":"https://burnaby.geotechnicalengineering.vip/differential-settlement-analysis/","@type":"ListItem","name":"Differential settlement analysis"},{"position":3,"url":"https://burnaby.geotechnicalengineering.vip/expansive-soil-evaluation/","@type":"ListItem","name":"Expansive soil evaluation"},{"position":4,"url":"https://burnaby.geotechnicalengineering.vip/micropile-design/","@type":"ListItem","name":"Micropile design"},{"position":5,"url":"https://burnaby.geotechnicalengineering.vip/shallow-foundation-design/","@type":"ListItem","name":"Shallow foundation design"}],"name":"Foundations"}]}</script></head>
 <body>
 
 <header>
@@ -215,7 +224,14 @@ img{max-width:100%!important;height:auto!important}</style><script type="applica
             </section>
 
             
-<section class="block" style="padding:2rem 1.5rem"><div style="max-width:1200px;margin:0 auto"><h2 style="margin-bottom:1.5rem;font-weight:700">Available services</h2><div style="display:grid;grid-template-columns:repeat(auto-fill,minmax(260px,1fr));gap:1rem"><a href="../collapsible-soil-evaluation/" style="display:block;padding:1.2rem;border:1px solid #E5E7EB;border-radius:10px;text-decoration:none;color:inherit;background:#FFFFFF;transition:all .2s;box-shadow:0 1px 2px rgba(0,0,0,.04)" onmouseover="this.style.borderColor='#F43F5E';this.style.transform='translateY(-2px)';this.style.boxShadow='0 4px 14px rgba(0,0,0,.08)'" onmouseout="this.style.borderColor='#E5E7EB';this.style.transform='translateY(0)';this.style.boxShadow='0 1px 2px rgba(0,0,0,.04)'"><h3 style="margin:0 0 .4rem;font-size:1.1rem">Collapsible soil evaluation</h3><span style="font-size:.85rem;color:#666">→ Ver detalle</span></a><a href="../differential-settlement-analysis/" style="display:block;padding:1.2rem;border:1px solid #E5E7EB;border-radius:10px;text-decoration:none;color:inherit;background:#FFFFFF;transition:all .2s;box-shadow:0 1px 2px rgba(0,0,0,.04)" onmouseover="this.style.borderColor='#F43F5E';this.style.transform='translateY(-2px)';this.style.boxShadow='0 4px 14px rgba(0,0,0,.08)'" onmouseout="this.style.borderColor='#E5E7EB';this.style.transform='translateY(0)';this.style.boxShadow='0 1px 2px rgba(0,0,0,.04)'"><h3 style="margin:0 0 .4rem;font-size:1.1rem">Differential settlement analysis</h3><span style="font-size:.85rem;color:#666">→ Ver detalle</span></a><a href="../expansive-soil-evaluation/" style="display:block;padding:1.2rem;border:1px solid #E5E7EB;border-radius:10px;text-decoration:none;color:inherit;background:#FFFFFF;transition:all .2s;box-shadow:0 1px 2px rgba(0,0,0,.04)" onmouseover="this.style.borderColor='#F43F5E';this.style.transform='translateY(-2px)';this.style.boxShadow='0 4px 14px rgba(0,0,0,.08)'" onmouseout="this.style.borderColor='#E5E7EB';this.style.transform='translateY(0)';this.style.boxShadow='0 1px 2px rgba(0,0,0,.04)'"><h3 style="margin:0 0 .4rem;font-size:1.1rem">Expansive soil evaluation</h3><span style="font-size:.85rem;color:#666">→ Ver detalle</span></a><a href="../micropile-design/" style="display:block;padding:1.2rem;border:1px solid #E5E7EB;border-radius:10px;text-decoration:none;color:inherit;background:#FFFFFF;transition:all .2s;box-shadow:0 1px 2px rgba(0,0,0,.04)" onmouseover="this.style.borderColor='#F43F5E';this.style.transform='translateY(-2px)';this.style.boxShadow='0 4px 14px rgba(0,0,0,.08)'" onmouseout="this.style.borderColor='#E5E7EB';this.style.transform='translateY(0)';this.style.boxShadow='0 1px 2px rgba(0,0,0,.04)'"><h3 style="margin:0 0 .4rem;font-size:1.1rem">Micropile design</h3><span style="font-size:.85rem;color:#666">→ Ver detalle</span></a><a href="../shallow-foundation-design/" style="display:block;padding:1.2rem;border:1px solid #E5E7EB;border-radius:10px;text-decoration:none;color:inherit;background:#FFFFFF;transition:all .2s;box-shadow:0 1px 2px rgba(0,0,0,.04)" onmouseover="this.style.borderColor='#F43F5E';this.style.transform='translateY(-2px)';this.style.boxShadow='0 4px 14px rgba(0,0,0,.08)'" onmouseout="this.style.borderColor='#E5E7EB';this.style.transform='translateY(0)';this.style.boxShadow='0 1px 2px rgba(0,0,0,.04)'"><h3 style="margin:0 0 .4rem;font-size:1.1rem">Shallow foundation design</h3><span style="font-size:.85rem;color:#666">→ Ver detalle</span></a></div></div></section></main>
+<section class="block" style="padding:2rem 1.5rem"><div style="max-width:1200px;margin:0 auto">
+<img src="/img/cimentaciones-superficiales-2.webp" alt="Foundations in Burnaby" loading="lazy" decoding="async" style="width:100%;max-height:220px;object-fit:cover;display:block;border-radius:6px;margin:1.5rem 0">
+<p>In Burnaby, foundation engineering must address the complex glacial and post-glacial geology that defines the city’s subsurface. Much of the area is underlain by advance glaciolacustrine deposits, Vashon till, and Capilano sediments, creating highly variable conditions ranging from dense lodgement tills to soft, compressible silts and clays. These units directly influence bearing capacity, settlement potential, and seismic response. Our geotechnical <a href="/investigation/">investigation</a> programs are designed to characterize these stratigraphic complexities in accordance with the BC Building Code and Vancouver Building By-law, ensuring that foundation recommendations meet both provincial and municipal requirements. For sites with suspected organic soils or undocumented fill, a targeted <a href="/exploratory-pit/">exploratory test pit</a> investigation provides rapid, cost-effective lithology verification and sampling access before advancing to deeper testing methods.</p>
+<p>Modern foundation design in Burnaby relies on a combination of in-situ penetration testing and laboratory analysis calibrated to Canadian Standards Association (CSA) and ASTM International methods. The <a href="/standard-penetration/">Standard Penetration Test (SPT)</a> remains the primary index for empirical correlation in granular and cohesive soils, while <a href="/cone-penetration/">Cone Penetration Test (CPT)</a> soundings deliver near-continuous profiles of tip resistance and sleeve friction, essential for identifying thin compressible layers that SPT alone may miss. In low-lying areas adjacent to Burnaby Lake or Still Creek, where soft organic silts govern settlement behavior, we supplement these with <a href="/field-vane-shear/">field vane shear tests (VST)</a> to directly measure undrained shear strength without the disturbance inherent in sampling. All field data is reduced using geotechnical software and interpreted within the framework of the Canadian Foundation Engineering Manual, producing defensible soil parameters for shallow and deep foundation analysis.</p>
+<p>Burnaby’s development landscape—spanning Metrotown high-rises, Brentwood mixed-use towers, hillside residential subdivisions on Burnaby Mountain, and institutional expansions at SFU—demands foundation solutions tailored to specific geomorphic settings. Deep foundations such as driven steel piles or drilled shafts are frequently required where liquefiable layers or thick compressible clays are encountered, while shallow footings may be feasible on dense till at depth. For critical infrastructure and post-disaster buildings, seismic site classification per NBCC 2020 dictates the need for shear-wave velocity profiling, often obtained through <a href="/in-situ-testing/">in-situ testing</a> techniques including seismic CPT or downhole methods. Each project type triggers distinct investigation depths, sampling frequencies, and laboratory testing suites to satisfy both geotechnical and structural engineering requirements.</p>
+<img src="/img/cimentaciones-superficiales-2.webp" alt="Foundations in Burnaby" loading="lazy" decoding="async" style="width:100%;max-height:220px;object-fit:cover;display:block;border-radius:6px;margin:1.5rem 0">
+
+<p>A typical foundation investigation proceeds from desktop review and utility clearance to fieldwork, followed by factual and interpretive reporting. Deliverables include borehole and CPT logs, laboratory test results, bearing capacity and settlement calculations, liquefaction assessments, and clear recommendations for foundation type, depth, and construction considerations such as dewatering or temporary excavation support. By integrating local geological knowledge with advanced <a href="/field-permeability/">field permeability test</a> data where groundwater control is critical, we provide Burnaby developers and structural engineers with a complete geotechnical model that reduces uncertainty, supports value engineering, and accelerates municipal permitting.</p></div></section></main>
     </div>
 </div>
 

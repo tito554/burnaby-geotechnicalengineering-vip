@@ -26,6 +26,11 @@
 
 @media (max-width: 900px) {
     .sidebar { display: none; }
+    .content-area { flex-direction: column; }
+    .container { padding: 1rem; }
+    .header-top { flex-direction: column; text-align: center; }
+    main { padding: 1.5rem; }
+}
 .sidebar .cat {
     cursor: pointer; display: flex; justify-content: space-between; align-items: center;
     padding: .65rem 1rem; color: rgba(255,255,255,0.85); font-size: .85rem; font-weight: 500;
@@ -43,11 +48,11 @@ body { font-family: var(--font-b); color: var(--text); background: var(--bg); li
 .cta .contacto-line { font-size: 1rem; margin: .5rem 0; }
 
 .cta { background: var(--dark); color: white; padding: 2rem; border-radius: 10px; margin: 2rem 0; text-align: center; }
-    .container { padding: 1rem; }
+    
 .sidebar .sub a:hover { color: #c9a961; background: rgba(201,169,97,0.06); border-left-color: #c9a961; }
 * { margin:0; padding:0; box-sizing:border-box; }
 .cta .whatsapp-btn:hover { background: #1eb853; }
-    main { padding: 1.5rem; }
+    
 .cta .whatsapp-sub { font-size: .85rem; opacity: .85; margin-bottom: 1rem; }
 footer a { color: rgba(255,255,255,0.85); }
 
@@ -68,7 +73,7 @@ tr:nth-child(even) { background: #f8fafc; }
     --font-b: 'IBM Plex Sans', 'Segoe UI', sans-serif;
 }
 .servicio p { margin: 0; font-size: .9rem; color: #475569; }
-    .header-top { flex-direction: column; text-align: center; }
+    
 main p { margin-bottom: 1rem; color: #334155; }
 h1, h2, h3, h4 { font-family: var(--font-h); }
 
@@ -85,7 +90,7 @@ summary:hover { background: rgba(0,0,0,0.02); }
 .cat-row{display:flex;align-items:stretch;justify-content:space-between;background:transparent;transition:background .15s;border-bottom:1px solid rgba(255,255,255,.05)}
 /* FIX 2026-04-18: selectores sin 'nav' para coincidir con el HTML real generado */
 .sidebar { padding: .5rem 0; }
-    .content-area { flex-direction: column; }
+    
 main h3 { color: var(--dark); font-size: 1.05rem; margin: 1.5rem 0 .5rem; font-weight: 600; }
 .sidebar {
     width: 240px; background: var(--dark); color: white; flex-shrink: 0;
@@ -136,7 +141,9 @@ main h2 { color: var(--dark); font-size: 1.35rem; margin: 2rem 0 1rem; padding-b
 
 .content-area { display: flex; gap: 1.5rem; align-items: flex-start; }
 .cat-name{flex:1;padding:.85rem 1.1rem;color:inherit;text-decoration:none;font-weight:600;line-height:1.3;display:block}
-.cat-toggle[aria-expanded="true"] .cat-arrow{transform:rotate(180deg)}</style>
+.cat-toggle[aria-expanded="true"] .cat-arrow{transform:rotate(180deg)}
+
+</style>
 <style>
 @media(min-width:901px){
   .content-area{display:flex!important;gap:1.5rem!important;align-items:flex-start!important}
@@ -148,7 +155,9 @@ main h2 { color: var(--dark); font-size: 1.35rem; margin: 2rem 0 1rem; padding-b
   .navbar .nav{display:flex!important;flex-wrap:nowrap!important;gap:1.2rem!important;align-items:center!important;overflow:visible!important;justify-content:space-between!important}
   main{flex:1!important;min-width:0!important}
   .navbar{display:flex!important;align-items:center!important;justify-content:space-between!important}
-img{max-width:100%!important;height:auto!important}</style></head>
+img{max-width:100%!important;height:auto!important}
+}
+</style></head>
 <body>
 
 <header>
@@ -192,6 +201,8 @@ img{max-width:100%!important;height:auto!important}</style></head>
 
             <section>
                 <h2>Typical technical challenges in Burnaby</h2>
+<hr style="border:none;height:2px;background:linear-gradient(90deg,transparent,#A16207,transparent);margin:2rem 0;width:60%;margin-left:auto;margin-right:auto">
+
                 <p>NBCC 2020 and the City of Burnaby’s slope hazard bylaw require that any development within 15 meters of a ravine or steep slope must include a slope stability <a href="/" data-interlink="1">analysis</a> certified by a professional geotechnical engineer. The real risk here is progressive failure triggered by seasonal water table rise — a 2-meter rise can reduce effective stress by 20 kPa, enough to exceed the safety margin in marginally stable slopes. We also account for seismic shaking, as Burnaby sits in a moderate seismicity zone where peak ground acceleration can reach 0.25g, which may push already weakened slopes past their limit.</p>
             </section>
 
@@ -216,6 +227,8 @@ img{max-width:100%!important;height:auto!important}</style></head>
 
             <section>
                 <h2>Q&A</h2>
+<hr style="border:none;height:2px;background:linear-gradient(90deg,transparent,#A16207,transparent);margin:2rem 0;width:60%;margin-left:auto;margin-right:auto">
+
                 <details><summary>What is the typical cost of a slope stability analysis in Burnaby?</summary><p>For a standard residential lot with 2–3 boreholes and limit-equilibrium modeling, the cost ranges between CA$3,200 and CA$5,800. Larger commercial corridors with monitoring requirements can go up to CA$6,220. Exact pricing depends on access conditions and depth of investigation.</p></details><details><summary>How long does the analysis take from site visit to report?</summary><p>A straightforward residential assessment typically takes 3–4 weeks: 1 week for drilling and sampling, 2 weeks for laboratory testing, and 1 week for modeling and report writing. If inclinometer monitoring is required, the timeline extends to 3–6 months to capture seasonal data.</p></details><details><summary>Do I need a slope stability analysis for a fence or retaining wall on my property?</summary><p>Only if the retaining wall exceeds 1.2 meters in height or is located within 5 meters of a ravine edge. The City of Burnaby’s bylaw requires a geotechnical assessment for any structure that could affect slope stability. We can review your property’s specific setback during a site visit.</p></details><details><summary>What happens if the factor of safety is below 1.5?</summary><p>Our report will recommend mitigation measures such as subsurface drainage, soil nailing, or grade reduction to bring the safety factor above 1.5. We also provide construction monitoring services to verify that the implemented solution achieves the required stability during and after construction.</p></details>
             </section>
 
