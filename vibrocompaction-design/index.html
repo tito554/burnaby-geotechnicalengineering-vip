@@ -174,6 +174,42 @@ header.hero, .hero { position: relative !important; }
 .leaflet-control { z-index: 800 !important; }
 .leaflet-container { z-index: 1 !important; }
 </style>
+<style id="inline-link-style">
+p a[href^="/"]:not(.cta-btn):not(.hero-cta){color:var(--accent,#0A2540) !important;text-decoration:underline !important;text-decoration-color:rgba(29,78,216,.45);text-underline-offset:2px;font-weight:600}
+p a[href^="/"]:not(.cta-btn):not(.hero-cta):hover{text-decoration-color:currentColor;opacity:.85}
+</style>
+<style id="navbar-compact-fix">
+/* Compactar navbar para que el menú entre completo */
+.navbar{padding:.65rem 1rem !important}
+.navbar .nav{gap:.55rem !important}
+.nav-item{font-size:.74rem !important;letter-spacing:.01em !important}
+.nav-item.has-dd .nav-cat-link{padding:.4rem .25rem !important}
+.nav-item.has-dd .nav-arrow{font-size:.7rem !important;margin-left:.15rem !important}
+.cta-btn{padding:.45rem .8rem !important;font-size:.72rem !important;letter-spacing:.03em !important}
+.logo-box,.brand-name,.brand{font-size:.82rem !important}
+.logo-text .main{font-size:.95rem !important}
+.logo-text .sub{font-size:.72rem !important}
+/* Para layouts aberdeen/classic con clase distinta */
+header nav a,.menu a{font-size:.78rem !important}
+@media (max-width:1100px){
+  .nav-item{font-size:.7rem !important}
+  .navbar .nav{gap:.4rem !important}
+  .cta-btn{padding:.4rem .65rem !important;font-size:.68rem !important}
+}
+</style>
+<style id="layout-defensive">
+html,body{overflow-x:hidden;max-width:100vw}
+body>*{max-width:100vw}
+@media (min-width:901px){
+  aside{position:relative}
+  aside+main,aside~main,aside~div>main{margin-left:0}
+  .content-area{display:flex;gap:1rem}
+}
+@media (max-width:900px){
+  aside{width:100% !important;position:static !important;height:auto !important}
+  .navbar{flex-wrap:wrap}
+}
+</style>
 </head>
 <body>
 
@@ -244,7 +280,7 @@ header.hero, .hero { position: relative !important; }
 
             <section>
                 <h2>Q&A</h2>
-                <details><summary>How much does vibrocompaction design typically cost for a Burnaby site?</summary><p>For a standard residential or light commercial lot in Burnaby, the design and verification package ranges between CA$2,080 and CA$8,100. This includes the initial CPT survey, probe layout plan, post-compaction testing, and a stamped certification report. Larger sites or those requiring deep treatment (over 12 m) fall at the upper end.</p></details><details><summary>What soil conditions in Burnaby require vibrocompaction versus other methods?</summary><p>Vibrocompaction works only in clean to slightly silty sands (fines content below 15%). In Burnaby's marine clay zones or peat deposits along Deer Lake, we recommend deep soil mixing or preloading with vertical drains instead.</p></details><details><summary>Can vibrocompaction design reduce liquefaction risk under the NBCC 2020 earthquake?</summary><p>Yes. When post-treatment relative density reaches 75% or higher, the factor of safety against liquefaction typically exceeds 1.5 for a 475-year event. We run the Youd-Idriss (2001) method using post-compaction CPT data to confirm compliance.</p></details><details><summary>How long does the vibrocompaction design process take from site investigation to final report?</summary><p>Typically 3 to 4 weeks. The first week covers field CPT and SPT borings, the second week is for probe layout and parameter selection, and the final week includes post-compaction testing and report writing. Tight schedules can be compressed to 2 weeks with advance mobilization.</p></details><details><summary>Does vibrocompaction affect adjacent structures or utilities in Burnaby's dense neighborhoods?</summary><p>Vibration levels at distances beyond 5 m usually stay below 12 mm/s PPV — well under the NBCC threshold for damage. We still recommend pre- and post-condition surveys for buildings within 10 m of the treatment zone, especially around older masonry structures in the Edmonds area.</p></details>
+                <details><summary>How much does vibrocompaction design typically cost for a Burnaby site?</summary><p>For a standard residential or light commercial lot in Burnaby, the design and verification package ranges between CA$2,080 and CA$8,100. This includes the initial CPT survey, probe layout plan, post-compaction testing, and a stamped certification report. Larger sites or those requiring deep treatment (over 12 m) fall at the upper end.</p></details><details><summary>What soil conditions in Burnaby require vibrocompaction versus other methods?</summary><p>Vibrocompaction works only in clean to slightly silty sands (fines content below 15%). In Burnaby's marine clay zones or peat deposits along Deer Lake, we recommend <a href="/deep-soil-mixing/">deep soil mixing</a> or preloading with vertical drains instead.</p></details><details><summary>Can vibrocompaction design reduce liquefaction risk under the NBCC 2020 earthquake?</summary><p>Yes. When post-treatment relative density reaches 75% or higher, the factor of safety against liquefaction typically exceeds 1.5 for a 475-year event. We run the Youd-Idriss (2001) method using post-compaction CPT data to confirm compliance.</p></details><details><summary>How long does the vibrocompaction design process take from site investigation to final report?</summary><p>Typically 3 to 4 weeks. The first week covers field CPT and SPT borings, the second week is for probe layout and parameter selection, and the final week includes post-compaction testing and report writing. Tight schedules can be compressed to 2 weeks with advance mobilization.</p></details><details><summary>Does vibrocompaction affect adjacent structures or utilities in Burnaby's dense neighborhoods?</summary><p>Vibration levels at distances beyond 5 m usually stay below 12 mm/s PPV — well under the NBCC threshold for damage. We still recommend pre- and post-condition surveys for buildings within 10 m of the treatment zone, especially around older masonry structures in the Edmonds area.</p></details>
             </section>
 
             <section>

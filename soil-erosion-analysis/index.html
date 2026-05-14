@@ -174,6 +174,42 @@ header.hero, .hero { position: relative !important; }
 .leaflet-control { z-index: 800 !important; }
 .leaflet-container { z-index: 1 !important; }
 </style>
+<style id="inline-link-style">
+p a[href^="/"]:not(.cta-btn):not(.hero-cta){color:var(--accent,#0A2540) !important;text-decoration:underline !important;text-decoration-color:rgba(29,78,216,.45);text-underline-offset:2px;font-weight:600}
+p a[href^="/"]:not(.cta-btn):not(.hero-cta):hover{text-decoration-color:currentColor;opacity:.85}
+</style>
+<style id="navbar-compact-fix">
+/* Compactar navbar para que el menú entre completo */
+.navbar{padding:.65rem 1rem !important}
+.navbar .nav{gap:.55rem !important}
+.nav-item{font-size:.74rem !important;letter-spacing:.01em !important}
+.nav-item.has-dd .nav-cat-link{padding:.4rem .25rem !important}
+.nav-item.has-dd .nav-arrow{font-size:.7rem !important;margin-left:.15rem !important}
+.cta-btn{padding:.45rem .8rem !important;font-size:.72rem !important;letter-spacing:.03em !important}
+.logo-box,.brand-name,.brand{font-size:.82rem !important}
+.logo-text .main{font-size:.95rem !important}
+.logo-text .sub{font-size:.72rem !important}
+/* Para layouts aberdeen/classic con clase distinta */
+header nav a,.menu a{font-size:.78rem !important}
+@media (max-width:1100px){
+  .nav-item{font-size:.7rem !important}
+  .navbar .nav{gap:.4rem !important}
+  .cta-btn{padding:.4rem .65rem !important;font-size:.68rem !important}
+}
+</style>
+<style id="layout-defensive">
+html,body{overflow-x:hidden;max-width:100vw}
+body>*{max-width:100vw}
+@media (min-width:901px){
+  aside{position:relative}
+  aside+main,aside~main,aside~div>main{margin-left:0}
+  .content-area{display:flex;gap:1rem}
+}
+@media (max-width:900px){
+  aside{width:100% !important;position:static !important;height:auto !important}
+  .navbar{flex-wrap:wrap}
+}
+</style>
 </head>
 <body>
 
@@ -246,7 +282,7 @@ header.hero, .hero { position: relative !important; }
                 <h2>Q&A</h2>
 <hr style="border:none;height:2px;background:linear-gradient(90deg,transparent,#A16207,transparent);margin:2rem 0;width:60%;margin-left:auto;margin-right:auto">
 
-                <details><summary>How does soil erosion analysis differ from a standard geotechnical investigation?</summary><p>A standard geotechnical investigation focuses on bearing capacity and settlement for foundations. Soil erosion analysis specifically quantifies surface and internal erosion potential using runoff modeling, dispersion tests (ASTM D4647, D4221), and erodibility factors. It answers how much soil will be lost per year and where erosion control measures are most critical.</p></details><details><summary>What is the typical cost range for a soil erosion analysis in Burnaby?</summary><p>The cost for a complete soil erosion analysis in Burnaby typically ranges between CA$1.130 and CA$3.710, depending on site size, number of test pits, laboratory tests required, and the complexity of the erosion and sediment control plan. Contact us for a firm quote based on your specific project scope.</p></details><details><summary>How long does a soil erosion analysis take from site visit to final report?</summary><p>Most erosion analyses are completed within 7 to 14 business days. Fieldwork including <a href="../porchet-double-ring-infiltrometer/" data-interlink="1">infiltration tests</a> and soil sampling usually takes one day. Laboratory dispersion and pinhole tests require 3 to 5 days, followed by modeling and report production. For large subdivisions with multiple test pits, the timeline may extend to 3 weeks.</p></details>
+                <details><summary>How does soil erosion analysis differ from a standard geotechnical investigation?</summary><p>A standard geotechnical investigation focuses on bearing capacity and settlement for <a href="/foundations/">foundations</a>. Soil erosion analysis specifically quantifies surface and internal erosion potential using runoff modeling, dispersion tests (ASTM D4647, D4221), and erodibility factors. It answers how much soil will be lost per year and where erosion control measures are most critical.</p></details><details><summary>What is the typical cost range for a soil erosion analysis in Burnaby?</summary><p>The cost for a complete soil erosion analysis in Burnaby typically ranges between CA$1.130 and CA$3.710, depending on site size, number of test pits, laboratory tests required, and the complexity of the erosion and sediment control plan. Contact us for a firm quote based on your specific project scope.</p></details><details><summary>How long does a soil erosion analysis take from site visit to final report?</summary><p>Most erosion analyses are completed within 7 to 14 business days. Fieldwork including <a href="../porchet-double-ring-infiltrometer/" data-interlink="1">infiltration tests</a> and soil sampling usually takes one day. Laboratory dispersion and pinhole tests require 3 to 5 days, followed by modeling and report production. For large subdivisions with multiple test pits, the timeline may extend to 3 weeks.</p></details>
             </section>
 
             <section>
